@@ -3,7 +3,7 @@ function [deltaM, deltaMPct] = diffMatrix(m1,m2)
 deltaM     = zeros(size(m1));
 deltaMPct  = zeros(size(m1));
 numParams1 = length(m1(:,1));
-numParams2 = length(m1(:,2));
+numParams2 = length(m1(1,:));
 
 for ii = 1:numParams1
     
