@@ -1,7 +1,7 @@
 function Write_Data(fileName,data,formatSpec)
 
 fileID = fopen(fileName,'w');
-for ii = 1:length(data)
+for ii = 1:length(data(:,1))
     data_now = data(ii,:);
     fprintf(fileID,formatSpec,data_now);
 end
