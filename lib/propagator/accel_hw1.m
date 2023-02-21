@@ -2,7 +2,7 @@
 % under the influence of a spherical harmonic expansion of a gravity field,
 % written for ASEN 6080 Spring 2023
 
-function dx = SphHarmWithPhi(t,x,pars,prop)
+function dx = accel_hw1(t,x,pars,prop)
 
 % GM
 Rref   = pars.Rref; % reference radius

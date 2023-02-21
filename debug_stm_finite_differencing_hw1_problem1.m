@@ -76,6 +76,6 @@ deltaMPct
 function dx = sc_EOM_Phi(t,x,pars,prop)
 
     % GM + SH
-    dx = SphHarmWithPhi(t,x,pars.Body,prop);
+    dx = accel_hw1(t,x,pars.Body,prop);
     
 end % For function
